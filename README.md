@@ -1,32 +1,32 @@
-# unique-id-generator #
+# locally-unique-id-generator #
 
 trivial generator for ids which are unique within an application
 
-**NPM users**: please consider the [Github README](https://github.com/rozek/unique-id-generator/blob/main/README.md) for the latest description of this package (as updating the docs would otherwise always require a new NPM package version)
+**NPM users**: please consider the [Github README](https://github.com/rozek/locally-unique-id-generator/blob/main/README.md) for the latest description of this package (as updating the docs would otherwise always require a new NPM package version)
 
 ## Installation ##
 
-`unique-id-generator` may be used as an ESM, CommonJS or AMD module or from a global variable.
+`locally-unique-id-generator` may be used as an ESM, CommonJS or AMD module or from a global variable.
 
 You may either install the package into your build environment using [NPM](https://docs.npmjs.com/) with the command
 
 ```
-npm install unique-id-generator
+npm install locally-unique-id-generator
 ```
 
 or load the plain script file directly
 
 ```
-<script src="https://unpkg.com/unique-id-generator"></script>
+<script src="https://unpkg.com/locally-unique-id-generator"></script>
 ```
 
 ## Access ##
 
 How to access the package depends on the type of module you prefer
 
-* ESM: `import newUniqueId from 'unique-id-generator'`
-* CommonJS: `const newUniqueId = require('unique-id-generator')`
-* AMD: `require(['unique-id-generator'], (newUniqueId) => {...})`
+* ESM: `import newUniqueId from 'locally-unique-id-generator'`
+* CommonJS: `const newUniqueId = require('locally-unique-id-generator')`
+* AMD: `require(['locally-unique-id-generator'], (newUniqueId) => {...})`
 
 Alternatively, you may access the global variable `newUniqueId` directly.
 
@@ -34,7 +34,7 @@ Alternatively, you may access the global variable `newUniqueId` directly.
 
 ```
 <script>
-  import newUniqueId from 'unique-id-generator'
+  import newUniqueId from 'locally-unique-id-generator'
 
   console.log('next unique id:',newUniqueId())
 </script>
@@ -66,7 +66,7 @@ You may easily build this package yourself.
 
 Just install [NPM](https://docs.npmjs.com/) according to the instructions for your platform and follow these steps:
 
-1. either clone this repository using [git](https://git-scm.com/) or [download a ZIP archive](https://github.com/rozek/unique-id-generator/archive/refs/heads/main.zip) with its contents to your disk and unpack it there 
+1. either clone this repository using [git](https://git-scm.com/) or [download a ZIP archive](https://github.com/rozek/locally-unique-id-generator/archive/refs/heads/main.zip) with its contents to your disk and unpack it there 
 2. open a shell and navigate to the root directory of this repository
 3. run `npm install` in order to install the complete build environment
 4. execute `npm run build` to create a new build
