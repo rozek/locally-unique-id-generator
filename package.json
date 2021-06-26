@@ -1,22 +1,22 @@
 {
-  "name": "unique-id-generator",
+  "name": "locally-unique-id-generator",
   "version": "0.1.0",
   "description": "trivial generator for ids which are unique within an application",
   "type":   "module",
-  "main":   "./dist/unique-id-generator.js",
-  "module": "./dist/unique-id-generator.esm.js",
+  "main":   "./dist/locally-unique-id-generator.js",
+  "module": "./dist/locally-unique-id-generator.esm.js",
   "exports": {
-    "require":"./dist/unique-id-generator.js",
-    "import": "./dist/unique-id-generator.esm.js"
+    "require":"./dist/locally-unique-id-generator.js",
+    "import": "./dist/locally-unique-id-generator.esm.js"
   },
-  "types": "./dist/unique-id-generator.d.ts",
+  "types": "./dist/locally-unique-id-generator.d.ts",
   "scripts": {
     "build": "rimraf dist && tsc && rollup -c rollup.config.js && mv src/*.d.ts dist && rm src/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rozek/unique-id-generator.git"
+    "url": "git+https://github.com/rozek/locally-unique-id-generator.git"
   },
   "keywords": [
     "unique-id"
@@ -24,9 +24,9 @@
   "author": "Andreas Rozek <a.rozek@gmx.de> (https://www.rozek.de/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rozek/unique-id-generator/issues"
+    "url": "https://github.com/rozek/locally-unique-id-generator/issues"
   },
-  "homepage": "https://github.com/rozek/unique-id-generator#readme",
+  "homepage": "https://github.com/rozek/locally-unique-id-generator#readme",
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.2.1",
     "rimraf": "^3.0.2",

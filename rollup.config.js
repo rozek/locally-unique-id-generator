@@ -4,17 +4,17 @@ import typescript from '@rollup/plugin-typescript';
 import { terser } from 'rollup-plugin-terser'
 
 export default {
-  input: './src/unique-id-generator.ts',
+  input: './src/locally-unique-id-generator.ts',
   output: [
     {
-      file:     './dist/unique-id-generator.js',
+      file:     './dist/locally-unique-id-generator.js',
       format:    'umd', // builds for both Node.js and Browser
       name:      'newUniqueId', // required for UMD modules
       noConflict:true,
       sourcemap: true,
       exports:   'default',
     },{
-      file:     './dist/unique-id-generator.esm.js',
+      file:     './dist/locally-unique-id-generator.esm.js',
       format:   'esm',
       sourcemap:true
     }
