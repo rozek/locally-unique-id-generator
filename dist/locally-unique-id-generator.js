@@ -1,2 +1,2 @@
 !function(e,n){"object"==typeof exports&&"undefined"!=typeof module?module.exports=n():"function"==typeof define&&define.amd?define(n):(e="undefined"!=typeof globalThis?globalThis:e||self,function(){var i=e.newUniqueId,t=e.newUniqueId=n();t.noConflict=function(){return e.newUniqueId=i,t}}())}(this,(function(){"use strict";var e=0;return function(){return"uid-"+ ++e}}));
-//# sourceMappingURL=unique-id-generator.js.map
+//# sourceMappingURL=locally-unique-id-generator.js.map
