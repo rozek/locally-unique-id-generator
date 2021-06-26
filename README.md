@@ -60,6 +60,12 @@ With such an import, the JavaScript API can be used as follows:
 
 * **`newUniqueId()`** - returns a new, unique literal id of the form `uid-<counter>` with "counter" starting at 1
 
+## Example ##
+
+An example is available on the Svelte REPL - feel free to play with it!
+
+* [basic example](https://svelte.dev/repl/34407dd75db14206becd97b1441720c6)
+
 ## Build Instructions ##
 
 You may easily build this package yourself.
