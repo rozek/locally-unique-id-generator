@@ -5,6 +5,7 @@
   "type":   "module",
   "main":   "./dist/locally-unique-id-generator.js",
   "module": "./dist/locally-unique-id-generator.esm.js",
+  "svelte": "./dist/locally-unique-id-generator.esm.js",
   "exports": {
     "require":"./dist/locally-unique-id-generator.js",
     "import": "./dist/locally-unique-id-generator.esm.js"
