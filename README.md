@@ -32,7 +32,7 @@ Alternatively, you may access the global variable `newUniqueId` directly.
 
 ## Usage within Svelte ##
 
-**For Svelte it is important to import the package in a module context, otherwise the generated ids may not be unique**:
+**For Svelte it is necessary to import the package in a module context, otherwise the generated ids may not be unique**:
 
 ```
 <script context="module">
