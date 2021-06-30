@@ -30,7 +30,21 @@ How to access the package depends on the type of module you prefer
 
 Alternatively, you may access the global variable `newUniqueId` directly.
 
-## Usage as an ECMAscript Module (e.g., within Svelte) ##
+## Usage within Svelte ##
+
+**For Svelte it is important to import the package in a module context**:
+
+```
+<script context="module">
+  import newUniqueId from 'locally-unique-id-generator'
+</script>
+
+<script>
+  console.log('next unique id:',newUniqueId())
+</script>
+```
+
+## Usage as an ECMAscript Module ##
 
 ```
 <script>
