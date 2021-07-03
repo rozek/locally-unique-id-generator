@@ -5,14 +5,14 @@
   "type": "module",
   "main": "./dist/locally-unique-id-generator.js",
   "module": "./dist/locally-unique-id-generator.esm.js",
-  "svelte": "./dist/locally-unique-id-generator.esm.js",
+  "svelte": "./dist/locally-unique-id-generator.svelte.js",
   "exports": {
     "require": "./dist/locally-unique-id-generator.js",
     "import": "./dist/locally-unique-id-generator.esm.js"
   },
   "types": "./dist/locally-unique-id-generator.d.ts",
   "scripts": {
-    "build": "rimraf dist && tsc && rollup -c rollup.config.js && mv src/*.d.ts dist && rm src/*.js",
+    "build": "rimraf dist && tsc && rollup -c rollup.config.js && mv src/*.d.ts dist && mv src/*.js ./dist/locally-unique-id-generator.svelte.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
