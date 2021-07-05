@@ -1,2 +1,10 @@
-var r=0;function t(){return"uid-"+ ++r}export default t;
+//----------------------------------------------------------------------------//
+//                        locally unique Id Generator                         //
+//----------------------------------------------------------------------------//
+var IdCounter = 0;
+function newUniqueId() {
+    return 'uid-' + ++IdCounter;
+}
+
+export default newUniqueId;
 //# sourceMappingURL=locally-unique-id-generator.esm.js.map
