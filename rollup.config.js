@@ -1,4 +1,4 @@
-// see https://remarkablemark.org/blog/2019/07/12/rollup-commonjs-umd/
+// see https://github.com/rozek/build-configuration-study
 
 import typescript from '@rollup/plugin-typescript';
 import { terser } from 'rollup-plugin-terser'
