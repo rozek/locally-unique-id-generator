@@ -13,11 +13,14 @@ export default {
       noConflict:true,
       sourcemap: true,
       exports:   'default',
+      plugins:   [terser({ format:{ comments:false, safari10:true } })],
     },{
       file:     './dist/locally-unique-id-generator.esm.js',
       format:   'esm',
       sourcemap:true
     }
   ],
-  plugins: [typescript(), terser({ format:{ comments:false, safari10:true } })],
+  plugins: [
+    typescript(),
+  ],
 };
