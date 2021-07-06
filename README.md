@@ -24,7 +24,7 @@ or load the plain script file directly
 
 How to access the package depends on the type of module you prefer
 
-* ESM: `import newUniqueId from 'locally-unique-id-generator'`
+* ESM (or Svelte): `import newUniqueId from 'locally-unique-id-generator'`
 * CommonJS: `const newUniqueId = require('locally-unique-id-generator')`
 * AMD: `require(['locally-unique-id-generator'], (newUniqueId) => {...})`
 
