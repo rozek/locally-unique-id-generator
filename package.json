@@ -1,6 +1,6 @@
 {
   "name": "locally-unique-id-generator",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "trivial generator for ids which are unique within an application",
   "type": "module",
   "main": "./dist/locally-unique-id-generator.js",
