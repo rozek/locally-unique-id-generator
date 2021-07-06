@@ -6,7 +6,7 @@ trivial generator for ids which are unique within an application
 
 ## Installation ##
 
-`locally-unique-id-generator` may be used as an ESM, CommonJS or AMD module or from a global variable.
+`locally-unique-id-generator` may be used as an ECMAScript module (ESM), a CommonJS or AMD module or from a global variable.
 
 You may either install the package into your build environment using [NPM](https://docs.npmjs.com/) with the command
 
@@ -32,7 +32,7 @@ Alternatively, you may access the global variable `newUniqueId` directly.
 
 ## Usage within Svelte ##
 
-**For Svelte it is necessary to import the package in a module context, otherwise the generated ids may not be unique**:
+For Svelte it is recommended to import the package within a module context:
 
 ```
 <script context="module">
@@ -44,17 +44,7 @@ Alternatively, you may access the global variable `newUniqueId` directly.
 </script>
 ```
 
-## Usage as an ECMAscript Module ##
-
-```
-<script>
-  import newUniqueId from 'locally-unique-id-generator'
-
-  console.log('next unique id:',newUniqueId())
-</script>
-```
-
-## Usage as a CommonJS or AMD Module (or as a global Variable) ##
+## Usage as ECMAscript, CommonJS or AMD Module (or as a global Variable) ##
 
 Let's assume that you already "required" or "imported" (or simply loaded) the module according to your local environment. In that case, you may use it as follows:
 
