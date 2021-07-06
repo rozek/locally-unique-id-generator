@@ -1,9 +1,19 @@
 //----------------------------------------------------------------------------//
 //                        locally unique Id Generator                         //
 //----------------------------------------------------------------------------//
-var IdCounter = 0;
+var IdCounter = 0; // hidden in the closure of "nextId"
+function nextId() {
+    return ++IdCounter;
+}
+/**** make global.nextId a real singleton ****/
+var global = /*#__PURE__*/ Function('return this')();
+// see https://stackoverflow.com/questions/3277182/how-to-get-the-global-object-in-javascript
+if (typeof global.nextId !== 'function') {
+    global.nextId = nextId;
+}
+/**** newUniqueId - the actually exported function ****/
 function newUniqueId() {
-    return 'uid-' + ++IdCounter;
+    return 'uid-' + global.nextId();
 }
 
 export default newUniqueId;
