@@ -4,7 +4,7 @@ trivial generator for ids which are unique within an application
 
 **NPM users**: please consider the [Github README](https://github.com/rozek/locally-unique-id-generator/blob/main/README.md) for the latest description of this package (as updating the docs would otherwise always require a new NPM package version)
 
-Just a small note: if you like this module and plan to use it, consider "starring" this repository (you will find the "Star" button on the top right of this page), such that I know which of my repositories to take most care of.
+> Just a small note: if you like this module and plan to use it, consider "starring" this repository (you will find the "Star" button on the top right of this page), such that I know which of my repositories to take most care of.
 
 ## Installation ##
 
