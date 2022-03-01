@@ -18,7 +18,7 @@ npm install locally-unique-id-generator
 
 or load the plain script file directly
 
-```
+```html
 <script src="https://unpkg.com/locally-unique-id-generator"></script>
 ```
 
@@ -36,7 +36,7 @@ Alternatively, you may access the global variable `newUniqueId` directly.
 
 For Svelte it is recommended to import the package within a module context:
 
-```
+```html
 <script context="module">
   import newUniqueId from 'locally-unique-id-generator'
 </script>
@@ -50,7 +50,7 @@ For Svelte it is recommended to import the package within a module context:
 
 Let's assume that you already "required" or "imported" (or simply loaded) the module according to your local environment. In that case, you may use it as follows:
 
-```
+```javascript
 console.log('next unique id:',newUniqueId())
 ```
 
