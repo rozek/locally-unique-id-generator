@@ -56,7 +56,9 @@ console.log('next unique id:',newUniqueId())
 
 ## Background Information ##
 
-From time to time, it may be necessary to generate unique ids (e.g., to serve as keys into a dictionary of objects since JavaScript does not allow to use objects themselves as keys). This module provides a trivial solution for this problem by using a counter to generate ids of the form `uid-<counter>`. Within the same application, such keys are guaranteed to be unique (unless more than 2^53 of them are created while that application is running)
+From time to time, it may be necessary to generate unique ids (e.g., to serve as keys into a dictionary of objects since JavaScript does not allow to use objects themselves as keys). This module provides a trivial solution for this problem by using a counter to generate ids of the form `uid-<counter>`. Within the same application, such keys are guaranteed to be unique (unless more than 2^53 of them are created while that application is running) - but only while the application is running: as soon as the application is restarted, the counter starts from 0 again.
+
+If you need universally unique ids, you should better generate UUIDs/GUIDs of type 4 (see below)
 
 ## JavaScript API ##
 
@@ -71,6 +73,29 @@ With such an import, the JavaScript API can be used as follows:
 An example is available on the Svelte REPL - feel free to play with it!
 
 * [basic example](https://svelte.dev/repl/34407dd75db14206becd97b1441720c6)
+
+## Alternative for Universally Unique Ids ##
+
+UUIDs/GUIDs of type 4 may be easily created using the following code:
+
+```
+   function newUUID ():string {
+    let Id = '', IdPart
+    IdPart = Math.round(Math.random()*0xffffffff).toString(16)
+      Id += IdPart + '00000000'.slice(IdPart.length) + '-'
+      IdPart = Math.round(Math.random()*0xffff).toString(16)
+      Id += IdPart + '0000'.slice(IdPart.length) + '-4'
+      IdPart = Math.round(Math.random()*0xfff).toString(16)
+      Id += IdPart + '000'.slice(IdPart.length) + '-'
+      IdPart = Math.round(Math.random()*0x3fff+0x8000).toString(16)
+      Id += IdPart + '-'
+      IdPart = Math.round(Math.random()*0xffffffffffff).toString(16)
+      Id += IdPart + '000000000000'.slice(IdPart.length)
+    return Id.toLowerCase()
+  }
+```
+
+provided that cryptographic uniqueness is not required.
 
 ## Build Instructions ##
 
