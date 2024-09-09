@@ -16,5 +16,5 @@ function newUniqueId() {
     return 'uid-' + global.__nextId();
 }
 
-export default newUniqueId;
+export { newUniqueId as default };
 //# sourceMappingURL=locally-unique-id-generator.esm.js.map

@@ -1,7 +1,7 @@
 // see https://github.com/rozek/build-configuration-study
 
 import typescript from '@rollup/plugin-typescript';
-import { terser } from 'rollup-plugin-terser'
+import terser from '@rollup/plugin-terser'
 
 export default {
   input: './src/locally-unique-id-generator.ts',
