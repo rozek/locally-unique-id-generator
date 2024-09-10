@@ -5,14 +5,14 @@
   "main":   "./dist/locally-unique-id-generator.umd.js",
   "browser":"./dist/locally-unique-id-generator.umd.js",
   "module": "./dist/locally-unique-id-generator.esm.js",
-  "svelte": "./src/locally-unique-id-generator.ts",
+  "svelte": "./dist/locally-unique-id-generator.esm.js",
   "types":  "./dist/locally-unique-id-generator.d.ts",
   "exports": {
     ".": {
       "require":"./dist/locally-unique-id-generator.umd.js",
       "browser":"./dist/locally-unique-id-generator.umd.js",
       "import": "./dist/locally-unique-id-generator.esm.js",
-      "svelte": "./src/locally-unique-id-generator.ts"
+      "svelte": "./dist/locally-unique-id-generator.esm.js"
     },
     "./package.json": "./package.json"
   },
