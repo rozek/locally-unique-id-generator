@@ -7,7 +7,7 @@ export default {
   input: './src/locally-unique-id-generator.ts',
   output: [
     {
-      file:     './dist/locally-unique-id-generator.js',
+      file:     './dist/locally-unique-id-generator.umd.js',
       format:    'umd', // builds for both Node.js and Browser
       name:      'newUniqueId', // required for UMD modules
       noConflict:true,
@@ -17,7 +17,7 @@ export default {
     },{
       file:     './dist/locally-unique-id-generator.esm.js',
       format:   'esm',
-      sourcemap:true
+      sourcemap:true,
     }
   ],
   plugins: [
