@@ -1,16 +1,16 @@
 {
   "name": "locally-unique-id-generator",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "trivial generator for ids which are unique within an application",
-  "main":   "./dist/locally-unique-id-generator.umd.js",
-  "browser":"./dist/locally-unique-id-generator.umd.js",
+  "main": "./dist/locally-unique-id-generator.umd.js",
+  "browser": "./dist/locally-unique-id-generator.umd.js",
   "module": "./dist/locally-unique-id-generator.esm.js",
   "svelte": "./dist/locally-unique-id-generator.esm.js",
-  "types":  "./dist/locally-unique-id-generator.d.ts",
+  "types": "./dist/locally-unique-id-generator.d.ts",
   "exports": {
     ".": {
-      "require":"./dist/locally-unique-id-generator.umd.js",
-      "browser":"./dist/locally-unique-id-generator.umd.js",
+      "require": "./dist/locally-unique-id-generator.umd.js",
+      "browser": "./dist/locally-unique-id-generator.umd.js",
       "import": "./dist/locally-unique-id-generator.esm.js",
       "svelte": "./dist/locally-unique-id-generator.esm.js"
     },
