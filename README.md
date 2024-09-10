@@ -56,7 +56,7 @@ console.log('next unique id:',newUniqueId())
 
 ## Background Information ##
 
-From time to time, it may be necessary to generate unique ids (e.g., to serve as keys into a dictionary of objects since JavaScript does not allow to use objects themselves as keys). This module provides a trivial solution for this problem by using a counter to generate ids of the form `uid-<counter>`. Within the same application, such keys are guaranteed to be unique (unless more than 2^53 of them are created while that application is running) - but only while the application is running: as soon as the application is restarted, the counter starts from 0 again.
+From time to time, it may be necessary to generate unique ids (e.g., for the ids of data lists in a web page). This module provides a trivial solution for this problem by using a counter to generate ids of the form `uid-<counter>`. Within the same application, such keys are guaranteed to be unique (unless more than 2^53 of them are created while that application is running) - but only while the application is running: as soon as the application is restarted, the counter starts from 0 again.
 
 If you need universally unique ids, you should better generate UUIDs/GUIDs of type 4 (see below)
 
